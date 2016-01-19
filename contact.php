@@ -29,8 +29,11 @@ global $post;
             <div class="row">
                 <div class="col-md-9 left">
                     <div class="main-content-area-inner theme-bg" id="leftDiv">
-                        <h3>Contact</h3>
-                        <p>We are not just about providing medicine. We want to know how we can work together to extend the benefits of medical marijuana to more people, so we can create more wellness. Talk to us and let us know your thoughts.</p>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                            <?php the_content(); ?>
+                        <?php endwhile; ?>
+                        <!-- <h3>Contact</h3>
+                        <p>We are not just about providing medicine. We want to know how we can work together to extend the benefits of medical marijuana to more people, so we can create more wellness. Talk to us and let us know your thoughts.</p> -->
                         <div class="form-list">
                             <?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]'); ?>
                             <div class="clearfix"></div>
