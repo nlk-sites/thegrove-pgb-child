@@ -61,7 +61,7 @@ global $post;
                         </div>
                         <div class="clearfix"></div>
                         <!-- End Col -->
-
+                        <?php the_field('below-location_text_block'); ?>
                     </div>
                 </div>
                 <!-- Aside starts -->
