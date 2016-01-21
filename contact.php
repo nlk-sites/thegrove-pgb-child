@@ -38,6 +38,7 @@ global $post;
                             <?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]'); ?>
                             <div class="clearfix"></div>
                         </div>
+                        <?php the_field('below_contact_form'); ?>
                         <div class="col-md-5">
                             <div class="contact-map-blog">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.6690254136015!2d-115.15193463699872!3d36.1015553604611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c5aef154d6b5%3A0x33d3a47105af0acb!2s4640+Paradise+Rd%2C+Paradise%2C+NV%2C+USA!5e0!3m2!1sen!2sin!4v1447333155885" width="100%" height="186" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -61,7 +62,6 @@ global $post;
                         </div>
                         <div class="clearfix"></div>
                         <!-- End Col -->
-                        <?php the_field('below-location_text_block'); ?>
                     </div>
                 </div>
                 <!-- Aside starts -->
