@@ -918,3 +918,10 @@ aside:last-child{ border-bottom:none;}
 }
 
 /*fix padding of below_contact_form*/
+div.form-list {
+  padding-bottom: 20px;
+}
+
+.padding-fix {
+  margin-bottom: 20px;
+}
