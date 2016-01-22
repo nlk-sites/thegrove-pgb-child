@@ -38,7 +38,11 @@ global $post;
                             <?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]'); ?>
                             <div class="clearfix"></div>
                         </div>
-                        <?php the_field('below_contact_form'); ?>
+
+                        <div class="col-sm-12 padding-fix">
+                          <?php the_field('below_contact_form'); ?>
+                        </div>
+
                         <div class="col-md-5">
                             <div class="contact-map-blog">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.6690254136015!2d-115.15193463699872!3d36.1015553604611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c5aef154d6b5%3A0x33d3a47105af0acb!2s4640+Paradise+Rd%2C+Paradise%2C+NV%2C+USA!5e0!3m2!1sen!2sin!4v1447333155885" width="100%" height="186" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -46,7 +50,7 @@ global $post;
                                 <p><a target="_blank" href="http://maps.google.com/?q=<?php echo ot_get_option("las_vegas_address"); ?> Las Vegas"><?php echo ot_get_option("las_vegas_address"); ?></a><br> <?php echo ot_get_option("las_vegas_number"); ?><br>
                                     <br>
                                     <?php // echo ot_get_option("las_vegas_timing"); ?></p>
-                                <span><?php echo ot_get_option("las_vegas_description"); ?></span> 
+                                <span><?php echo ot_get_option("las_vegas_description"); ?></span>
                             </div>
                         </div>
                         <!-- End Col -->
@@ -57,7 +61,7 @@ global $post;
                                 <p><a target="_blank" href="http://maps.google.com/?q=<?php echo str_replace(" - Dispensing Soon", "", ot_get_option("pahrump_address")); ?> Pahrump"><?php echo ot_get_option("pahrump_address"); ?></a> <br> <?php echo ot_get_option("pahrump_number"); ?><br>
                                     <br>
                                     <?php // echo ot_get_option("pahrump_timing"); ?></p>
-                                <span><?php echo ot_get_option("pahrump_description"); ?></span> 
+                                <span><?php echo ot_get_option("pahrump_description"); ?></span>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -70,9 +74,9 @@ global $post;
                         <?php get_sidebar('slider-1'); ?>
                     </div>
                 </div>
-                <!-- Aside Ends --> 
+                <!-- Aside Ends -->
             </div>
-        </div>	
+        </div>
     </article>
 
 
