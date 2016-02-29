@@ -55,7 +55,7 @@ global $post;
                         <h3>Las Vegas Location</h3>
                         <p><a target="_blank" href="http://maps.google.com/?q=<?php echo ot_get_option("las_vegas_address"); ?> Las Vegas"><?php echo ot_get_option("las_vegas_address"); ?></a> : <?php echo ot_get_option("las_vegas_number"); ?><br />
                             <br />
-                            <?php // echo ot_get_option("las_vegas_timing"); ?></p>
+                            <?php echo ot_get_option("las_vegas_timing"); ?></p>
                         <span><?php echo ot_get_option("las_vegas_description"); ?></span> </div>
 
                 </div>
@@ -70,7 +70,7 @@ global $post;
 
                         <p><a target="_blank" href="http://maps.google.com/?q=<?php echo str_replace(" - Dispensing Soon","",ot_get_option("pahrump_address")); ?> Pahrump"><?php echo ot_get_option("pahrump_address"); ?></a> : <?php echo ot_get_option("pahrump_number"); ?><br />
                             <br />
-                            <?php // echo ot_get_option("pahrump_timing"); ?>
+                            <?php echo ot_get_option("pahrump_timing"); ?>
                         </p>
                         <span><?php echo ot_get_option("pahrump_description"); ?></span> </div>
 
