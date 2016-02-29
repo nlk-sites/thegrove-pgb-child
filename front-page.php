@@ -104,11 +104,11 @@ global $post;
                         <aside class="aside-img hidden-sm">
                             <div class="aside-block-one">
                                 <?php
-                                    if (get_field('home_sidebar_image')) {
-                                        echo '<img src="' . the_field('home_sidebar_image') . '" />';
-                                    } else {
-                                        echo '<img src="' . get_stylesheet_directory_uri() . '/images/hm-aside-1.jpg" />';
-                                    }
+                                    if (get_field('home_sidebar_image')) : ?>
+                                        <img src="<?php the_field('home_sidebar_image'); ?>" />
+                                    <?php else : ?>
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hm-aside-1.jpg" />
+                                    <?php endif;
                                 ?>
                             </div>
                         </aside>
