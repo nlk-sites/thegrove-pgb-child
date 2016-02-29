@@ -102,7 +102,15 @@ global $post;
                 <div class="col-md-3">
                     <div id="rightDiv">
                         <aside class="aside-img hidden-sm">
-                            <div class="aside-block-one"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hm-aside-1.jpg" /> </div>
+                            <div class="aside-block-one">
+                                <?php
+                                    if (get_field('home_sidebar_image')) {
+                                        the_field('home_sidebar_image');
+                                    } else {
+                                        echo '<img src="' . get_stylesheet_directory_uri() . '/images/hm-aside-1.jpg" />';
+                                    }
+                                ?>
+                            </div>
                         </aside>
                         <?php get_sidebar('slider-1'); ?>
                     </div>
