@@ -83,7 +83,15 @@ global $post;
             <div class="row">
                 <div class="col-md-9 left">
                     <div id="leftDiv">
-                        <div class="main-banner"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-content-main-banner.jpg" /> </div>
+                        <div class="main-banner">
+                            <?php 
+                                if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail();
+                                } else {
+                                    echo '<img src="' . get_stylesheet_directory_uri() . '/images/home-content-main-banner.jpg" />';
+                                }
+                            ?>
+                        </div>
                         <div class="theme-vertical-border"></div>
                         <div class="main-content-area-inner theme-bg">
                             <?php echo $post->post_content; ?>
