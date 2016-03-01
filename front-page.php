@@ -50,10 +50,10 @@ global $post;
                                 <img src="<?php the_field('las_vegas_image'); ?>" />
                             <?php else : ?>
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/location-1.jpg" />
+                                <h2>Dispensing Soon</h2>
+                                <p>Any State MMJ Card Accepted</p>
                             <?php endif;
                         ?>
-                        <h2>Dispensing Soon</h2>
-                       <p>Any State MMJ Card Accepted</p>
                     </div>
                     <div class="hm-locationtext-block-inner">
                         <h3>Las Vegas Location</h3>
@@ -70,11 +70,10 @@ global $post;
                                 <img src="<?php the_field('pahrump_image'); ?>" />
                             <?php else : ?>
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/location-2.jpg" />
+                                <h2>Dispensing Soon</h2>
+                                <p>Any State MMJ Card Accepted</p>
                             <?php endif;
                         ?>
-                        
-                         <h2>Dispensing Soon</h2>
-                       <p>Any State MMJ Card Accepted</p>
                     </div>
                     <div class="hm-locationtext-block-inner">
                         <h3>Pahrump Location</h3>
