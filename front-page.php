@@ -46,7 +46,7 @@ global $post;
                 <div class="col-md-6 left"> 
                     <div class="hm-locater-img">
                         <?php
-                            if (get_field('home_sidebar_image')) : ?>
+                            if (get_field('las_vegas_image')) : ?>
                                 <img src="<?php the_field('las_vegas_image'); ?>" />
                             <?php else : ?>
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/location-1.jpg" />
