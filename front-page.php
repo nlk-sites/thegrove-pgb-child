@@ -45,9 +45,13 @@ global $post;
             <div class="row">
                 <div class="col-md-6 left"> 
                     <div class="hm-locater-img">
-                       
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/location-1.jpg" />
-
+                        <?php
+                            if (get_field('home_sidebar_image')) : ?>
+                                <img src="<?php the_field('las_vegas_image'); ?>" />
+                            <?php else : ?>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/location-1.jpg" />
+                            <?php endif;
+                        ?>
                         <h2>Dispensing Soon</h2>
                        <p>Any State MMJ Card Accepted</p>
                     </div>
@@ -61,7 +65,14 @@ global $post;
                 </div>
                 <div class="col-md-6 right">
                     <div class="hm-locater-img">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/location-2.jpg" />
+                        <?php
+                            if (get_field('pahrump_image')) : ?>
+                                <img src="<?php the_field('pahrump_image'); ?>" />
+                            <?php else : ?>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/location-2.jpg" />
+                            <?php endif;
+                        ?>
+                        
                          <h2>Dispensing Soon</h2>
                        <p>Any State MMJ Card Accepted</p>
                     </div>
