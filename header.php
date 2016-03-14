@@ -97,11 +97,20 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="top-bar-inner">
-                                        <div class="col-md-9 left">
-                                            <p>Las Vegas • <a target="_blank" href="http://maps.google.com/?q=<?php echo ot_get_option("las_vegas_address"); ?> Las Vegas"><?php echo ot_get_option("las_vegas_address"); ?></a> • <?php echo ot_get_option("las_vegas_number"); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pahrump • <a target="_blank" href="http://maps.google.com/?q=<?php echo str_replace(" - Dispensing Soon", "", ot_get_option("pahrump_address")); ?> Pahrump"><?php echo ot_get_option("pahrump_address"); ?></a> • <?php echo ot_get_option("pahrump_number"); ?></p>
+                                        <div class="col-md-12 left">
+                                            <p><strong>Las Vegas</strong> • <a target="_blank" href="http://maps.google.com/?q=<?php echo ot_get_option("las_vegas_address"); ?> Las Vegas"><?php echo ot_get_option("las_vegas_address"); ?></a> • <?php echo ot_get_option("las_vegas_number"); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Pahrump</strong> • <a target="_blank" href="http://maps.google.com/?q=<?php echo str_replace(" - Dispensing Soon", "", ot_get_option("pahrump_address")); ?> Pahrump"><?php echo ot_get_option("pahrump_address"); ?></a> • <?php echo ot_get_option("pahrump_number"); ?></p>
                                         </div>
-                                        <div class="col-md-3 right">
-                                            <ul class="top-bar-socialmedia pull-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Top Bar End -->
+						<div class="mid-top-bar hidden-xs hidden-sm">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="top-bar-inner">
+                                        <div class="col-md-6 left">
+                                            <ul class="top-bar-socialmedia">
                                                 <?php
                                                 $facebook_link = ot_get_option("facebook_link");
                                                 $twitter_link = ot_get_option("twitter_link");
@@ -142,11 +151,17 @@
                                                 <?php } ?>
                                             </ul>
                                         </div>
+                                        <div class="col-md-6 right">
+                                            <ul class="loyalty_program">
+                                            	<li>Loyalty Program:</li>
+                                            	<li><a href="#" class="btn btn-primary btn-hollow">The Grove Society</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Top Bar End -->
+                        <!-- mid top bar -->
 
                         <div class="mobile-top-bar">
                             <div class="container">
