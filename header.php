@@ -154,7 +154,7 @@
                                         <div class="col-md-6 right">
                                             <ul class="loyalty_program">
                                             	<li>Loyalty Program:</li>
-                                            	<li><a href="#" class="btn btn-primary btn-hollow">The Grove Society</a></li>
+                                            	<li><a href="http://www.thegrovenv.com/the-grove-society/" class="btn btn-primary btn-hollow">The Grove Society</a></li>
                                             </ul>
                                         </div>
                                     </div>
