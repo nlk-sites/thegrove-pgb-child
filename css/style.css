@@ -831,7 +831,7 @@ aside:last-child{ border-bottom:none;}
 .hm-content-area .theme-bg p {font-size: 17px;line-height: 30px;}
 .hm-locationimage-block .right .hm-locationtext-block-inner{ padding: 30px 35px 50px 35px;}
 .hm-locationimage-block .left .hm-locationtext-block-inner{    padding: 30px 35px 50px 35px;}
-	.main-content-area-inner { padding: 50px 40px !important;}
+	.main-content-area-inner { padding: 10px 40px !important;}
 	.upcomming-events{    padding: 40px 35px 40px 35px;}
 	.upcomming-events h3 {font-size: 22px;}
 	aside p {margin-top: 20px;}
@@ -1029,6 +1029,25 @@ div.form-list {
 	height: auto;
 }
 
+#leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="email"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="number"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="password"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="tel"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="text"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="url"] {
+    width: 98.5% !important;
+}
+
+#leftDiv .gform_wrapper .datepicker, .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="email"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="number"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="password"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="tel"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="text"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="url"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="email"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="number"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="password"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="tel"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="text"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="url"], .gform_wrapper .ginput_complex input[type="email"], .gform_wrapper .ginput_complex input[type="number"], .gform_wrapper .ginput_complex input[type="password"], .gform_wrapper .ginput_complex input[type="tel"], .gform_wrapper .ginput_complex input[type="text"], .gform_wrapper .ginput_complex input[type="url"] {
+    width: 100% !important;
+}
+
+#leftDiv .gform_wrapper li.gfield.gfield_error.gfield_contains_required
+{
+	margin-top: 0px !important;	
+}
+
+#leftDiv .gform_wrapper .validation_message {
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+	
 
 @media (min-width: 768px) {
   /*hide loyalty */
@@ -1055,3 +1074,11 @@ div.form-list {
 	    margin: 0px auto;
 	}
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.main-banner img, .hm-locater-img img {
+	    width: 100%;
+	    max-height: 260px;
+	}
+}
+	
