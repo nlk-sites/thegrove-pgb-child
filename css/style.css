@@ -986,3 +986,72 @@ div.form-list {
 	padding: 10px 25px;
 	line-height: 14px;
 }
+
+
+/* NAV LOYALTY MENU */
+
+#main-menu li.loyalty
+{
+	border-bottom: 0px solid #FFF;	
+}
+
+#main-menu li.loyalty.loyalty_title
+{
+	padding-top: 45px;
+	padding-bottom: 20px; 
+	font-size: 30px;
+	line-height: 34px;
+	color: #4c8833;
+	text-align: center;
+}
+
+#main-menu li.loyalty.loyalty_btn
+{
+	padding-bottom: 45px;
+}
+
+#main-menu li.loyalty.loyalty_btn a.btn.btn-hollow
+{
+	background: none;
+	border: 1px solid #528b3a;
+	color: #4c8833;
+	font-family: "avenir-medium";
+	font-size: 26px;
+	font-weight: 400;
+	border-radius: 12px;
+	padding: 28px;
+	line-height: 14px;
+	width: 100%;
+	max-width: 409px;
+	margin: 0px auto;
+	display: block;
+	float: none;
+	height: auto;
+}
+
+
+@media (min-width: 768px) {
+  /*hide loyalty */
+  #main-menu li.loyalty {
+    display: none;
+  }
+}
+
+
+@media (max-width: 640px) {
+    #main-menu li.loyalty.loyalty_title {
+	    padding-top: 15px;
+	    padding-bottom: 10px;
+	    font-size: 18px;
+	    line-height: 25px;
+	}
+	
+	#main-menu li.loyalty.loyalty_btn a.btn.btn-hollow {
+	    font-size: 14px;
+	    border-radius: 12px;
+	    padding: 15px 20px;
+	    line-height: 14px;
+	    max-width: 250px;
+	    margin: 0px auto;
+	}
+}

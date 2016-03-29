@@ -126,3 +126,14 @@ function custom_age_verification_button_text( $translated, $text, $domain ) {
 }
 
 add_filter( 'gettext', 'custom_age_verification_button_text', 10, 3 );
+
+
+add_filter( 'wp_nav_menu_items', 'grove_menu_item', 10, 2 );
+function grove_menu_item ( $items, $args ) {
+	if ($args->menu == 'Top Menu') {
+        $items .= '<li class="loyalty loyalty_title">Loyalty Program</li>';
+		$items .= '<li class="loyalty loyalty_btn"><a href="http://www.thegrovenv.com/the-grove-society/" class="btn btn-primary btn-hollow">The Grove Society</a></li>';
+    }
+    return $items;
+}
+
