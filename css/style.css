@@ -1047,7 +1047,12 @@ div.form-list {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-	
+
+.main-banner img
+{
+	height: auto !important;
+	max-height: 100%;
+}	
 
 @media (min-width: 768px) {
   /*hide loyalty */
