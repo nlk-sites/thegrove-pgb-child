@@ -1079,7 +1079,7 @@ div.form-list {
 	    margin: 0px auto;
 	}
 	
-	.gform_wrapper .top_label li.gfield.gf_left_half, .gform_wrapper .top_label li.gfield.gf_right_half, .gform_wrapper .top_label li.gfield.gf_left_third, .gform_wrapper .top_label li.gfield.gf_middle_third, .gform_wrapper .top_label li.gfield.gf_right_third {
+	#leftDiv .gform_wrapper .top_label li.gfield.gf_left_half, #leftDiv .gform_wrapper .top_label li.gfield.gf_right_half, .gform_wrapper .top_label li.gfield.gf_left_third, .gform_wrapper .top_label li.gfield.gf_middle_third, .gform_wrapper .top_label li.gfield.gf_right_third {
 	    width: 97.5% !important;
 	    margin: 0px !important;
 	    clear: both !important;
