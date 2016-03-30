@@ -875,7 +875,7 @@ aside:last-child{ border-bottom:none;}
 @media (max-width: 640px) {
   /*hide second 'dispensing soon' image*/
   .col-md-6.right .hm-locater-img {
-    display: none;
+    xdisplay: none;
   }
 }
 
@@ -1074,6 +1074,24 @@ div.form-list {
 	    line-height: 14px;
 	    max-width: 250px;
 	    margin: 0px auto;
+	}
+	
+	.gform_wrapper .top_label li.gfield.gf_left_half, .gform_wrapper .top_label li.gfield.gf_right_half, .gform_wrapper .top_label li.gfield.gf_left_third, .gform_wrapper .top_label li.gfield.gf_middle_third, .gform_wrapper .top_label li.gfield.gf_right_third {
+	    width: 97.5% !important;
+	    margin: 0px !important;
+	    clear: both !important;
+		display: block;
+		float: none;
+	}
+	
+	.gform_wrapper .ginput_complex select {
+	    width: 100% !important;
+	    margin: 0px !important;
+	}
+	
+	.gform_footer .gform_button
+	{
+		float: none !important;
 	}
 }
 
