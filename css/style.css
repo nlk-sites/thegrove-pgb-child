@@ -828,7 +828,7 @@ aside:last-child{ border-bottom:none;}
 .hm-content-area .theme-bg p {font-size: 17px;line-height: 30px;}
 .hm-locationimage-block .right .hm-locationtext-block-inner{ padding: 30px 35px 50px 35px;}
 .hm-locationimage-block .left .hm-locationtext-block-inner{    padding: 30px 35px 50px 35px;}
-	.main-content-area-inner { padding: 50px 40px !important;}
+	.main-content-area-inner { padding: 10px 40px !important;}
 	.upcomming-events{    padding: 40px 35px 40px 35px;}
 	.upcomming-events h3 {font-size: 22px;}
 	aside p {margin-top: 20px;}
@@ -875,7 +875,7 @@ aside:last-child{ border-bottom:none;}
 @media (max-width: 640px) {
   /*hide second 'dispensing soon' image*/
   .col-md-6.right .hm-locater-img {
-    display: none;
+    xdisplay: none;
   }
 }
 
@@ -983,3 +983,130 @@ div.form-list {
 	padding: 10px 25px;
 	line-height: 14px;
 }
+
+
+/* NAV LOYALTY MENU */
+
+#main-menu li.loyalty
+{
+	border-bottom: 0px solid #FFF;	
+}
+
+#main-menu li.loyalty.loyalty_title
+{
+	padding-top: 45px;
+	padding-bottom: 20px; 
+	font-size: 30px;
+	line-height: 34px;
+	color: #4c8833;
+	text-align: center;
+}
+
+#main-menu li.loyalty.loyalty_btn
+{
+	padding-bottom: 45px;
+}
+
+#main-menu li.loyalty.loyalty_btn a.btn.btn-hollow
+{
+	background: none;
+	border: 1px solid #528b3a;
+	color: #4c8833;
+	font-family: "avenir-medium";
+	font-size: 26px;
+	font-weight: 400;
+	border-radius: 12px;
+	padding: 28px;
+	line-height: 14px;
+	width: 100%;
+	max-width: 409px;
+	margin: 0px auto;
+	display: block;
+	float: none;
+	height: auto;
+}
+
+#leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="email"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="number"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="password"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="tel"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="text"], #leftDiv .gform_wrapper .ginput_complex .ginput_full input[type="url"] {
+    width: 98.5% !important;
+}
+
+#leftDiv .gform_wrapper .datepicker, .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="email"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="number"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="password"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="tel"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="text"], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type="url"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="email"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="number"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="password"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="tel"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="text"], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type="url"], .gform_wrapper .ginput_complex input[type="email"], .gform_wrapper .ginput_complex input[type="number"], .gform_wrapper .ginput_complex input[type="password"], .gform_wrapper .ginput_complex input[type="tel"], .gform_wrapper .ginput_complex input[type="text"], .gform_wrapper .ginput_complex input[type="url"] {
+    width: 100% !important;
+}
+
+#leftDiv .gform_wrapper li.gfield.gfield_error.gfield_contains_required
+{
+	margin-top: 0px !important;	
+}
+
+#leftDiv .gform_wrapper .validation_message {
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.main-banner img
+{
+	height: auto !important;
+	max-height: 100%;
+}	
+
+@media (min-width: 768px) {
+  /*hide loyalty */
+  #main-menu li.loyalty {
+    display: none;
+  }
+}
+
+
+@media (max-width: 640px) {
+    #main-menu li.loyalty.loyalty_title {
+	    padding-top: 15px;
+	    padding-bottom: 10px;
+	    font-size: 18px;
+	    line-height: 25px;
+	}
+	
+	#main-menu li.loyalty.loyalty_btn a.btn.btn-hollow {
+	    font-size: 14px;
+	    border-radius: 12px;
+	    padding: 15px 20px;
+	    line-height: 14px;
+	    max-width: 250px;
+	    margin: 0px auto;
+	}
+	
+	#leftDiv .gform_wrapper .top_label li.gfield.gf_left_half, #leftDiv .gform_wrapper .top_label li.gfield.gf_right_half, .gform_wrapper .top_label li.gfield.gf_left_third, .gform_wrapper .top_label li.gfield.gf_middle_third, .gform_wrapper .top_label li.gfield.gf_right_third {
+	    width: 97.5% !important;
+	    margin: 0px !important;
+	    clear: both !important;
+		display: block;
+		float: none;
+	}
+	
+	#leftDiv .gform_wrapper .ginput_complex .ginput_right select, #leftDiv .gform_wrapper .ginput_complex select {
+	    width: 100% !important;
+	    margin: 0px !important;
+	}
+	
+	.gform_footer .gform_button
+	{
+		float: none !important;
+	}
+	
+	.gform_wrapper .ginput_complex .ginput_left, .gform_wrapper .ginput_complex .ginput_right {
+	    width: 97.5% !important;
+	    display: block !important;
+	    vertical-align: top;
+	    margin: 0px !important;
+	    float: none !important;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.main-banner img, .hm-locater-img img {
+	    width: 100%;
+	    max-height: 260px;
+	}
+}
+	
