@@ -455,7 +455,7 @@ label.gfield_label {
 #navbar-footer {
 	float:left;
 	margin:20px 0px 0px 0px;
-	width:60%;
+	width:auto;
 }
 #navbar-footer ul {
 	margin:0px;
@@ -704,7 +704,8 @@ img {
 	#navbar-footer {
 		float:left;
 		margin:20px 0px 0px 0px;
-		width:70%;
+		/*width:70%;*/
+		width:auto;
 	}
 	#navbar-footer ul li a {
 		line-height:30px;
@@ -764,7 +765,12 @@ aside:last-child{ border-bottom:none;}
 
 
 }
-@media all and (max-width:1100px) {}
+@media all and (max-width:1100px) {
+	
+	.no-padding .main-content-area-inner { 
+		padding: 0px!important;
+	}
+}
 
 @media (min-width: 900px) and (max-width: 990px) {
 .hm-locater-img h2{font-size:59px; }
@@ -1112,4 +1118,11 @@ div.form-list {
 	    max-height: 260px;
 	}
 }
+
+/* css  for page-nopadding page start */
+.no-padding .main-content-area-inner { 
+	padding:0px; 
+}
+
+/* css  for page-nopadding page end */
 	
