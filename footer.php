@@ -9,7 +9,7 @@
 ?>
 <article class="">
     <div class="container">
-        <div class="row">
+        <div class="">
             
                 <div class="upcomming-events">
 
