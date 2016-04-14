@@ -163,10 +163,12 @@ aside p{ font-size:14px; line-height:23px; margin-top:30px;}
 ::-moz-placeholder {/* Firefox 19+ */color: #6D6E71;}
 :-ms-input-placeholder {color: #6D6E71;}
 
-.upcomming-events{background-color:#BCBEC0; padding:60px 70px 70px 70px; text-align:center;}
-.upcomming-events h3{ margin:0px; font-size:24px; line-height:23px;margin-bottom: 25px;}
+.upcomming-events{background-color:#BCBEC0; padding:60px 70px 60px 70px; text-align:center;}
+.upcomming-events h3{ margin:0px; font-size:24px; line-height:23px;margin-bottom: 16px; text-transform: uppercase;}
 .upcomming-events h3:after{ border-bottom:1px solid #fff; content:'';position: relative;display: block; width: 190px;margin: auto;padding-top: 15px;}
-.upcomming-events p{ font-size:13px; line-height:28px;}
+.upcomming-events p{ font-size:13px; line-height:23px; font-family: avenir-light; font-weight:bold;}
+.upcomming-events p:last-child {margin-bottom:25px; font-family: avenir-light; font-weight:bold;}
+
 
 footer{ margin-top:20px; margin-bottom:10px;}
 
@@ -1119,10 +1121,127 @@ div.form-list {
 	}
 }
 
+
 /* css  for page-nopadding page start */
 .no-padding .main-content-area-inner { 
 	padding:0px; 
 }
 
 /* css  for page-nopadding page end */
-	
+
+/*-----------------------------new pages Category Product Page-----------------------------*/
+.breadcrumb{
+  background-color: #C6D601;
+  border-radius: 1px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 17px 23px !important;
+}
+.breadcrumb > li + li::before {
+    content: ">";
+    color: #6D6E71;
+	padding: 0 5px;
+}
+.breadcrumb li{
+	font-weight:700
+}
+.breadcrumb li:last-child{
+	font-family: avenir-light;
+	font-weight:bold;
+}
+.vapes-services{
+	background:#EEEEEE; 
+	text-align: center;
+	margin-bottom: 10px; 
+	min-height:200px;
+	padding:25px; 
+}
+.vapes-img{
+	margin: 0 auto;
+}
+.vapes-img img{
+	display:inline-block;
+	height: 200px;
+	width: auto;
+}
+ .vapes-services.color{ 
+	background:#C6D601;
+	text-align: left;
+}
+.heading{
+	font-size: 23px;
+	text-transform: uppercase;
+}
+.vapes-services p{
+	font-size:12px; 
+	font-weight: 400;
+	font-family: avenir-light; 
+	font-weight:bold;
+	line-height: 23px;
+}
+.comman_button {
+    line-height: 29px;
+    border: 0px;
+    background: #a3a5a8;
+    border-radius: 12px;
+    cursor: pointer;
+	color: #ffffff;
+	display: block;
+	font-weight: 100; 
+	float: left;
+	font-size: 10px;
+	margin: 0px 0px 10px 0px;
+    -moz-border-radius: 12px;
+	text-transform: uppercase;
+	height: 34px;
+    padding: 5px 40px;
+    width: auto;
+    -webkit-border-radius: 12px;
+} 
+.loyalty{ 
+	background-color: #C6D601; 
+	min-height:410px; 
+	padding: 45px;
+}
+.loyalty .heading{
+	text-transform: none !important;
+	text-align:left;
+	font-size: 20px;
+	margin-bottom: 13px;
+}
+ .loyalty p{
+	text-align:left;
+}
+.nopadding{
+	padding:0px
+}
+/*upcomming-events footer button*/
+
+.upcomming-events a{
+	background-color: #A4A7A9;
+	border-color: #8c8c8c;
+	border-radius: 12px;
+	border: 0px;
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	font-size: 10px;
+	font-weight: 600;
+	height: 34px;
+	line-height: 13px;	
+	margin:0 auto;
+	margin-top: 25px !important;
+	padding: 10px 70px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	width: 250px;
+}
+.upcomming-events a:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+	color: #333333;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+	outline: none !important;
+}
