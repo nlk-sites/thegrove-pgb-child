@@ -10,7 +10,7 @@
 <article class="">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            
                 <div class="upcomming-events">
 
                     <?php
@@ -36,7 +36,7 @@
                     <?php ?>
 
                 </div>
-            </div>
+            
         </div>
     </div>
 </article>
