@@ -47,12 +47,15 @@ get_header(); ?>
 	<div class="container">
 <div class="theme-vertical-border"></div>
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<div class="bd-example" data-example-id="">
-			<ol class="breadcrumb">
-				<li><a href="#">Home</a></li>
-				<li class="active"><?php woocommerce_page_title(); ?></li>
-			</ol>
+	
+		
+			<div class="breadcrumb" typeof="BreadcrumbList" vocab="http://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
 		</div>
+		
 
 		<?php endif; ?>
 
@@ -63,10 +66,16 @@ get_header(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
 <div class="row">
-				<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php 
+				$i = 1;
+					//added before to ensure it gets opened
+				echo '<div class="group-row">';
+				
+				while ( have_posts() ) : the_post(); ?>
 				
 				<div class="col-xs-12 col-md-6 col-lg-4">
-					 <div class="vapes-services nopadding">
+					 <div class="vapes-services nopadding vapes-services-img">
 						 <div class="vapes-img">
 						 <?php the_post_thumbnail(); ?>
 						 </div>
@@ -78,11 +87,17 @@ get_header(); ?>
 					 </div>
 				</div>
 				
-				<?php endwhile; // end of the loop. ?>
+				<?php 
+				
+				if($i % 3 == 0) {echo '</div><div class="group-row">';}
+				$i++;
+				endwhile; // end of the loop. ?>
 </div>
 		
-		<?php endif; ?>
+		<?php endif;
+              echo '</div>';
+		?>
 
-
+</div>
 
 <?php get_footer();  ?>
