@@ -31,12 +31,12 @@ global $post;
 					// Get the all product categories here
 
 					$args = array(
-						'number'     => $number,
-						'orderby'    => $orderby,
-						'order'      => $order,
-						'hide_empty' => $hide_empty,
-						'include'    => $ids
+						'number'     => 7,
+						'orderby' => 'name',
+						'order'      => 'ASC',
+						'hide_empty' => 1
 					);
+					
 					$product_categories = get_terms( 'product_cat', $args );
 					
 					$count = count($product_categories);
@@ -46,7 +46,7 @@ global $post;
             
 			
             <div class="col-xs-12 col-md-6 col-lg-4">
-					<div class="vapes-services nopadding">
+					<div class="vapes-services nopadding vapes-services-img">
 					<div class="vapes-img">
 					<?php 
 					$thumbnail_id = get_woocommerce_term_meta( $product_category->term_id, 'thumbnail_id', true );
