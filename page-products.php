@@ -28,6 +28,11 @@ global $post;
 	 <div class="row">
 	 
 			<?php
+			
+					$i = 1;
+					 //added before to ensure it gets opened
+					echo '<div class="group-row">';
+				
 					// Get the all product categories here
 
 					$args = array(
@@ -68,7 +73,12 @@ global $post;
 	
 			
 		<?php 
+		
+		 if($i % 3 == 0) {echo '</div><div class="group-row">';}
+    $i++;
 			}
+			
+		echo '</div>';
 	}
 ?>    
 
