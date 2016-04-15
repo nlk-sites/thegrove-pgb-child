@@ -22,8 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 $page_for_posts = get_option('page_for_posts');
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-get_header( 'shop' ); ?>
-<div class="top-banner">
+get_header( '' ); ?>
+
+	<div class="top-banner">
         <div class="container hidden-xs hidden-sm">
             <div class="row">
                 <div class="col-md-12"> <img src="<?php the_field("hero_image", $page_for_posts); ?>" /> </div>
@@ -35,61 +36,51 @@ get_header( 'shop' ); ?>
             </div>
         </div>
     </div>
-	
-	<div class="container">
-<div class="theme-vertical-border"></div>
-	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<div class="bd-example" data-example-id="">
-			<ol class="breadcrumb">
-				<li><a href="#">Home</a></li>
-				<li class="active"><?php echo get_the_title();  ?></li>
-			</ol>
-		</div>
-		<?php endif; ?>
-		
-				<?php if ( have_posts() ) : ?>
-
-
-			<?php //woocommerce_product_loop_start(); ?>
-
-				<?php woocommerce_product_subcategories(); ?>
-<div class="row ">
 <div class="container">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<div class="color clearfix product-details">
-					
-						<div class="col-xs-12 col-md-6 col-lg-6 product-details-img">
-							    <?php  the_post_thumbnail('large'); ?>
-						</div>
-					
-						<div class="col-xs-12 col-md-6 col-lg-6">
-					 <div class="details-heading"><?php echo get_the_title();  ?></div>
-					 <div class="details-text"><?php echo get_the_content();  ?></div>
-					 <div class="">         
-					 
-					 <div class="col-xs-12 col-md-6 col-lg-5">
-					 
-					 		  <div class="details-button" data-example-id="">
-									<select class="details-drop">
-									  <option selected="">Open this select menu</option>
-									  <option value="1">One</option>
-									  <option value="2">Two</option>
-									  <option value="3">Three</option>
-									</select>
-								</div>
-					</div>
-	
-		  </div>
-		  
-
-						</div>
-					</div>
-				<?php endwhile; // end of the loop. ?>
-</div>
-</div>
-		
-		<?php endif; ?>
+<div class="theme-vertical-border"></div>
+<div class="breadcrumb" typeof="BreadcrumbList" vocab="http://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
 		</div>
-	<div class="theme-vertical-border"></div>
+<div class="col-xs-12 col-md-12 col-lg-12 product-details color">
+	<?php
+		/**
+		 * woocommerce_before_main_content hook.
+		 *
+		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+		 * @hooked woocommerce_breadcrumb - 20
+		 */
+		//do_action( 'woocommerce_before_main_content' );
+	?>
 
+		<?php while ( have_posts() ) : the_post(); ?>
+
+			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+
+		<?php endwhile; // end of the loop. ?>
+
+	 
+
+	<?php
+		/**
+		 * woocommerce_after_main_content hook.
+		 *
+		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+		 */
+		do_action( 'woocommerce_after_main_content' );
+	?>
+
+	<?php
+		/**
+		 * woocommerce_sidebar hook.
+		 *
+		 * @hooked woocommerce_get_sidebar - 10
+		 */
+	//	do_action( 'woocommerce_sidebar' );
+	?>
+</div>
+</div>
+<div class="theme-vertical-border"></div>
 <?php get_footer( 'shop' ); ?>

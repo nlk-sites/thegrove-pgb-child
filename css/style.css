@@ -1117,53 +1117,73 @@ div.form-list {
 .color{
 	background: #C6D601;
 }
-.product-details{
-	padding:50px;
+.product-det-sig-image .images{
+	margin-left:30px;
 }
-.product-details-img{
-	padding-left:40px;
+.product-det-sig-summary{
+	
 }
-.details-heading{
+.product-det-sig-summary .entry-title{
 	font-size:48px;
-	margin-top: -10px;
 }
-.details-text{
+.product-det-sig-summary .details-text{
 	font-size: 14px;
 	margin-top: 10px;
 	line-height: 23px;
 }
-.details-drop{
-    display: inline-block;
-    max-width: 100%;
-    -webkit-appearance: none;
-    padding: 7px;
-    padding-right: .75rem\9;
-    color: #55595c;
-    vertical-align: middle;
-    background-image: none;
-    -webkit-background-size: 8px 10px;
-    background-size: 8px 10px;
-    border: 1px solid #A4A7A9;
-    -moz-appearance: none;
-	width: 320px;
-	font-size: 12px;
+.product-det-sig-summary .price{
+	font-size: 14px;
+	margin-top: 10px;
+	line-height: 23px;
+	font-weight:700;
 }
-.details-button::before {
-	content: " ";
-	background: green;
-	width: 25px;
-	height: 32px;
-	position: absolute;
-	background-image:url('../images/arrow.png');
-	right: 10px;
-} 
-.details-button {
-    position: relative;
-    padding: 1rem;
-    margin: 1rem -1rem;
-	width: 230px;
-    
-    
+.product-det-sig-summary .price ins{
+	margin-left:30px;
+	font-size: 18px;
+	color:#fff;
+	text-decoration: none;
 }
+.product-det-sig-summary .cart .label{
+	padding-left:0px;
+}
+.product-det-sig-summary .cart label{
+	color:#6d6e71;
+}
+
+.product-det-sig-summary .cart .variations{
+	margin-bottom:15px;
+}
+.product-det-sig-summary .cart .quantity{
+	margin-bottom:15px;
+	display: inline-block;
+}
+
+.product-det-sig-summary .cart .quantity .qty{
+	width:50px;
+}
+.product-det-sig-summary .cart .single_add_to_cart_button{
+	margin-top: 0px !important;
+	background-color: #A4A7A9;
+	border-color: #8c8c8c;
+	width: auto;
+	height: 34px;
+	font-size: 10px;
+	line-height: 13px;
+	border: 0px;
+	color: #ffffff;
+	padding: 10px 40px;
+	text-transform: uppercase;
+	border-radius: 12px;
+	cursor: pointer;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 10px;
+	display: inline-block;
+}
+.product-details{
+	padding:50px;
+}
+
 /*CLOSE Product Single Page*/
 	
