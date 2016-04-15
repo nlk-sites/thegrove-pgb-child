@@ -166,9 +166,10 @@ aside p{ font-size:14px; line-height:23px; margin-top:30px;}
 .upcomming-events{background-color:#BCBEC0; padding:60px 70px 60px 70px; text-align:center;}
 .upcomming-events h3{ margin:0px; font-size:24px; line-height:23px;margin-bottom: 16px; text-transform: uppercase;}
 .upcomming-events h3:after{ border-bottom:1px solid #fff; content:'';position: relative;display: block; width: 190px;margin: auto;padding-top: 15px;}
-.upcomming-events p{ font-size: 13px;
-	line-height: 25px;
-	font-family: avenir-medium;
+.upcomming-events p{ 
+	font-size: 13px;
+	line-height: 24.7px;
+	font-family: avenir-light;
 	font-weight: 400;
 }
 .upcomming-events p:last-child {margin-bottom:25px; font-family: avenir-medium; font-weight:bold;}
@@ -1127,15 +1128,18 @@ div.form-list {
   border-radius: 1px;
   margin-bottom: 10px;
   font-size: 12px;
-  padding: 17px 23px !important;}
-.breadcrumb > li + li::before {
-    content: ">";
-    padding: 0 5px;
-    color: #6D6E71;}
-.breadcrumb li{font-weight:700}
-.breadcrumb li:last-child{
-font-weight:bold;
-font-family: avenir-light;}
+  padding: 17px 23px !important;
+ }
+
+.breadcrumb span {
+	font-weight:100 !important;
+}
+
+.breadcrumb span:last-child{
+	font-weight:bold !important;
+	font-family: avenir-light;
+}
+
 .vapes-services-img{min-height:200px !important;}
 .vapes-services{
  background:#EEEEEE; 
@@ -1159,10 +1163,10 @@ font-family: avenir-light;}
  }
 .vapes-services p{
  font-size:12px; 
- line-height: 23px;
+ line-height: 22px;
  font-weight: 400;
- font-family: avenir-medium; 
-}
+ font-family: avenir-medium;
+ }
 
 .comman_button {
     width: auto;
