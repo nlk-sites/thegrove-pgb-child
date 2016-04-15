@@ -46,7 +46,7 @@ global $post;
             
 			
             <div class="col-xs-12 col-md-6 col-lg-4">
-					<div class="vapes-services nopadding">
+					<div class="vapes-services nopadding vapes-services-img">
 					<div class="vapes-img">
 					<?php 
 					$thumbnail_id = get_woocommerce_term_meta( $product_category->term_id, 'thumbnail_id', true );
