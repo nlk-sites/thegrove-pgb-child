@@ -31,12 +31,12 @@ global $post;
 					// Get the all product categories here
 
 					$args = array(
-						'number'     => $number,
-						'orderby'    => $orderby,
-						'order'      => $order,
-						'hide_empty' => $hide_empty,
-						'include'    => $ids
+						'number'     => 7,
+						'orderby' => 'name',
+						'order'      => 'ASC',
+						'hide_empty' => 1
 					);
+					
 					$product_categories = get_terms( 'product_cat', $args );
 					
 					$count = count($product_categories);
