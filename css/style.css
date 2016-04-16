@@ -99,7 +99,7 @@ a:hover{color:#6D6E71; text-decoration:underline;}
 .top-bar-address h3{ color:#fff; line-height:50px; margin-top: 0px;}
 .top-bar-address p{ color:#fff; line-height:45px;}
 .top-bar-address span{ color:#fff;line-height:30px; font-family: avenir-light; }
-.top-address-btn{ background-color:#A3A5A8; min-width:200px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; line-height:50px;     padding: 4px 0px 0px 0px !important; margin-right:15px; border:0px; margin-top:40px; color:#fff;}
+.top-address-btn{ background-color:#A3A5A8; min-width:200px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; line-height:50px;     padding: 4px 0 0 !important; margin-right:15px; border:0px; margin-top:40px; color:#fff;}
 
 .grove-header{ min-height:130px;}
 .grove-header .left{ margin-top:30px; }
@@ -215,7 +215,7 @@ a.faq-link {
 	font-size:15px;
 	font-weight:bold;
 	line-height:30px;
-	padding:0px 0px 0px 30px;
+	padding: 0 0 0 30px;
 	margin-top: 35px;
 }
 a.faq-link.active {
@@ -224,7 +224,7 @@ a.faq-link.active {
 	font-size:15px;
 	font-weight:bold;
 	line-height:30px;
-	padding:0px 0px 0px 30px;
+	padding:0 0 0 30px;
 }
 .faq-active-box {
 	padding:0px 0px 10px 30px;
@@ -236,7 +236,7 @@ a.faq-link-inner {
 	font-size:15px;
 	font-weight:bold;
 	line-height:30px;
-	padding:0px 0px 0px 30px;
+	padding:0 0 0 30px;
 	margin-top: 35px;
 }
 a.faq-link-inner.active {
@@ -245,7 +245,7 @@ a.faq-link-inner.active {
 	font-size:15px;
 	font-weight:bold;
 	line-height:30px;
-	padding:0px 0px 0px 30px;
+	padding:0 0 0 30px;
 }
 .edu-content-inside-readmore{
 	cursor:pointer;
@@ -454,7 +454,7 @@ label.gfield_label {
 
 #navbar-footer {
 	float:left;
-	margin:20px 0px 0px 0px;
+	margin:20px 0 0;
 	width:auto;
 }
 #navbar-footer ul {
@@ -471,7 +471,7 @@ label.gfield_label {
 #navbar-footer ul li a {
 	line-height:30px;
 	display:block;
-	padding:0px 15px;
+	padding:0 15px;
 	font-size:14px;
 }
 
@@ -673,13 +673,13 @@ img {
 	}
 	#navbar-footer {
 		float:left;
-		margin:20px 0px 0px 0px;
+		margin:20px 0 0;
 		width:70%;
 	}
 	#navbar-footer ul li a {
 		line-height:30px;
 		display:block;
-		padding:0px 15px;
+		padding:0 10px;
 		font-size:14px;
 	}
 }
@@ -710,7 +710,7 @@ img {
 	#navbar-footer ul li a {
 		line-height:30px;
 		display:block;
-		padding:0px 15px;
+		padding:0 10px;
 		font-size:14px;
 	}
 }
