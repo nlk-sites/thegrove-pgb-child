@@ -44,7 +44,7 @@ get_header( '' ); ?>
 				bcn_display();
 			}?>
 		</div>
-<div class="col-xs-12 col-md-12 col-lg-12 product-details color">
+<div class="col-xs-12 col-md-12 col-lg-12 product-details theme-bg clearfix">
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
