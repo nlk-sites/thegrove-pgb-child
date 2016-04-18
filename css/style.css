@@ -99,7 +99,7 @@ a:hover{color:#6D6E71; text-decoration:underline;}
 .top-bar-address h3{ color:#fff; line-height:50px; margin-top: 0px;}
 .top-bar-address p{ color:#fff; line-height:45px;}
 .top-bar-address span{ color:#fff;line-height:30px; font-family: avenir-light; }
-.top-address-btn{ background-color:#A3A5A8; min-width:200px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; line-height:50px;     padding: 4px 0px 0px 0px !important; margin-right:15px; border:0px; margin-top:40px; color:#fff;}
+.top-address-btn{ background-color:#A3A5A8; min-width:200px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; line-height:50px;     padding: 4px 0 0 !important; margin-right:15px; border:0px; margin-top:40px; color:#fff;}
 
 .grove-header{ min-height:130px;}
 .grove-header .left{ margin-top:30px; }
@@ -126,14 +126,11 @@ a:hover{color:#6D6E71; text-decoration:underline;}
 .hm-locationtext-block p{ font-size:13px; line-height:20px;}
 .hm-locationtext-block-inner span{ font-size:14px; font-family: avenir-light; margin-top:20px; line-height:22px}
 
-.contact-map-blog { width:100%; padding:0px 0px 20px 0px;}
-.contact-map-blog h3{ font-size:20px; margin-top:0px; margin:20px 0px; line-height:20px; display:block;}
-.contact-map-blog p{ font-size:13px; line-height:20px;}
-.contact-map-blog span{ font-size:14px; font-family: avenir-light; margin-top:20px; line-height:22px}
+
 
 .main-content-area{ }
 
-.main-content-area-inner { padding:10px 80px 50px 50px; line-height:24px;margin-bottom:10px;}
+.main-content-area-inner { padding:10px 50px 50px 50px; line-height:24px;margin-bottom:10px;}
 .main-content-area-inner h1{ margin:30px 0px 10px 0px; font-size:22px; line-height:25px; margin-bottom:20px;}
 .hm-content-list{padding-left: 18px;}
 .hm-content-list li{ padding-top:25px;}
@@ -222,7 +219,7 @@ a.faq-link {
 	font-size:15px;
 	font-weight:bold;
 	line-height:30px;
-	padding:0px 0px 0px 30px;
+	padding: 0 0 0 30px;
 	margin-top: 35px;
 }
 a.faq-link.active {
@@ -231,7 +228,7 @@ a.faq-link.active {
 	font-size:15px;
 	font-weight:bold;
 	line-height:30px;
-	padding:0px 0px 0px 30px;
+	padding:0 0 0 30px;
 }
 .faq-active-box {
 	padding:0px 0px 10px 30px;
@@ -243,7 +240,7 @@ a.faq-link-inner {
 	font-size:15px;
 	font-weight:bold;
 	line-height:30px;
-	padding:0px 0px 0px 30px;
+	padding:0 0 0 30px;
 	margin-top: 35px;
 }
 a.faq-link-inner.active {
@@ -252,7 +249,7 @@ a.faq-link-inner.active {
 	font-size:15px;
 	font-weight:bold;
 	line-height:30px;
-	padding:0px 0px 0px 30px;
+	padding:0 0 0 30px;
 }
 .edu-content-inside-readmore{
 	cursor:pointer;
@@ -461,7 +458,7 @@ label.gfield_label {
 
 #navbar-footer {
 	float:left;
-	margin:20px 0px 0px 0px;
+	margin:20px 0 0;
 	width:auto;
 }
 #navbar-footer ul {
@@ -478,7 +475,7 @@ label.gfield_label {
 #navbar-footer ul li a {
 	line-height:30px;
 	display:block;
-	padding:0px 15px;
+	padding:0 15px;
 	font-size:14px;
 }
 
@@ -680,13 +677,13 @@ img {
 	}
 	#navbar-footer {
 		float:left;
-		margin:20px 0px 0px 0px;
+		margin:20px 0 0;
 		width:70%;
 	}
 	#navbar-footer ul li a {
 		line-height:30px;
 		display:block;
-		padding:0px 15px;
+		padding:0 10px;
 		font-size:14px;
 	}
 }
@@ -717,7 +714,7 @@ img {
 	#navbar-footer ul li a {
 		line-height:30px;
 		display:block;
-		padding:0px 15px;
+		padding:0 10px;
 		font-size:14px;
 	}
 }
@@ -1139,6 +1136,7 @@ div.form-list {
 
 /* css  for page-nopadding page end */
 
+
 /*-----------------------------new pages Category Product Page-----------------------------*/
 .breadcrumb{
   background-color: #C6D601;
@@ -1452,3 +1450,92 @@ div.form-list {
 
  
 /*for popup crome end */
+
+	
+/*CONTACT DESTILS PAGE START*/
+
+.contact-map-blog { 
+	padding:0px 0px 20px 0px;
+	width:100%; 
+}
+.contact-map-blog h3{ 
+	display:block;
+	font-size:20px; 
+	line-height:20px; 
+	margin-top: 40px !important;
+	margin:22px 0px; 
+}
+.contact-map-blog p{ 
+	font-size:14px; 
+	line-height:25.5px;
+}
+.contact-map-blog span{ 
+	font-size:14px; 
+	font-family: avenir-light; 
+	margin-top:20px; 
+	line-height:22px;
+}
+.contact-map-blog .time{
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+.contact-map-blog .time p{ 
+	line-height:24.5px;
+}
+.contact-map-blog{
+	margin-top: 18px;
+}
+.contact-map-blog iframe{
+	margin-top:23px;
+}
+.map-view{
+	margin-right: 0px;
+	margin-bottom: 43px;
+	width: 306px;
+}
+.map-view a{
+	font-size:14px;
+	margin-top:-30px; 
+}
+.map-view .contact-map-blog{
+	padding-bottom: 0px;
+}
+.bx-wrapper .bx-viewport {
+	border: 0px solid #fff !important;
+	margin-bottom:15px;
+ }
+.main-content-area-inner p{
+	font-size:14px;
+}
+
+.main-content-area .form-list{
+	padding: 18px 0 20px !important;
+}
+.contact-det-list{
+	padding-bottom: 0px !important;
+}
+.contact-det-list *::-moz-placeholder {
+    color: #646473;
+	font-size:12px;
+}
+.contact-det-list input[type="submit"]{ 
+	width:208px;
+}
+.contact-det-list .gform_footer{
+	margin-top: -15px !important;
+}
+.contact-det-list .ginput_container_text, .ginput_container_email{
+	height: 34px;
+}
+.contact-det-list .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type="submit"] {
+    font-size: 10px;
+}
+.bx-wrapper{
+	margin: 0px auto 0px 6px !important;
+}
+.main-content-area-inner .contact-map-blog {
+	margin-left: -5px;
+}
+
+/*CONTACT DESTILS PAGE END*/
+

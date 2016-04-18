@@ -137,3 +137,13 @@ function grove_menu_item ( $items, $args ) {
     return $items;
 }
 
+/* Function for reducing the post content to specified string length. */
+function get_teaser_text($string,$number_of_characters) {
+		
+	$string = strip_tags($string);//striping html tags from the content
+	if(strlen($string)>$number_of_characters) {
+		return substr(strip_tags($string),0,$number_of_characters).'...';
+	} else {
+		return $string;
+	}
+}
