@@ -85,8 +85,8 @@ global $post;
                                 <h3><a href="<?php echo get_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h3>
                                 <p><a target="_blank" href="http://maps.google.com/?q=<?php echo $address; echo $city; ?>"><?php echo $address; ?></a><br> <?php echo $number; ?>
                                     <br>
-                                    <div class="time"><?php  echo $timing; ?></p></div>
-                                <span><?php echo get_teaser_text($description,110); ?></span>
+                                <div class="time"><?php  echo $timing; ?></p></div>
+                                <span><?php echo get_teaser_text($description,115); ?></span>
                             </div>
                         </div>
 					<?php
