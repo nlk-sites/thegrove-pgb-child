@@ -28,7 +28,7 @@ global $post;
         <div class="container">
             <div class="row">
                 <div class="col-md-9 left">
-                    <div class="main-content-area-inner theme-bg" id="leftDiv">
+                    <div class="main-content-area-inner theme-bg contact-page" id="leftDiv">
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                             <?php the_content(); ?>
                         <?php endwhile; endif; ?>
@@ -43,27 +43,58 @@ global $post;
                           <?php the_field('below_contact_form'); ?>
                         </div>
 
-                        <div class="col-md-5">
+					<?php 
+					$contact_child = array('post_parent'=>$post->ID,
+											'post_type' => 'page',
+											'post_status' => 'publish',
+											'orderby'=> 'menu_order',
+											'order' =>'ASC'); 
+					$contact_child_query = null;
+					$contact_child_query = new WP_Query($contact_child);
+					
+					$count = 1; // Used to align the contact-map-blog div to left and right.
+					
+					if( $contact_child_query->have_posts() ) { 
+					
+					 while ($contact_child_query->have_posts()) :
+						$contact_child_query->the_post();
+						
+							// Retriving the values of custom field of current page
+	
+							$address = '';
+							$city = '';
+							$number = '';
+							$timing = '';
+							$description = '';
+							$map_link = '';
+								
+							if ( function_exists( 'get_field' ) )
+							{
+								$address = get_field("address");
+								$city = get_field('city');
+								$number = get_field("number");
+								$timing = get_field("timing");
+								$description = get_field("description");
+								$map_link = get_field("map_link");
+							}
+						
+						?>
+                        <div class="col-md-6 contact-map <?php echo ($count % 2 == 0?'align-right':' '); ?>">
                             <div class="contact-map-blog">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.6690254136015!2d-115.15193463699872!3d36.1015553604611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c5aef154d6b5%3A0x33d3a47105af0acb!2s4640+Paradise+Rd%2C+Paradise%2C+NV%2C+USA!5e0!3m2!1sen!2sin!4v1447333155885" width="100%" height="186" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                <h3>Las Vegas Location</h3>
-                                <p><a target="_blank" href="http://maps.google.com/?q=<?php echo ot_get_option("las_vegas_address"); ?> Las Vegas"><?php echo ot_get_option("las_vegas_address"); ?></a><br> <?php echo ot_get_option("las_vegas_number"); ?><br>
+                                <iframe src="<?php  echo $map_link; ?>" width="293px" height="190px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <h3><a href="<?php echo get_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h3>
+                                <p><a target="_blank" href="http://maps.google.com/?q=<?php echo $address; echo $city; ?>"><?php echo $address; ?></a><br> <?php echo $number; ?>
                                     <br>
-                                    <?php // echo ot_get_option("las_vegas_timing"); ?></p>
-                                <span><?php echo ot_get_option("las_vegas_description"); ?></span>
+                                    <div class="time"><?php  echo $timing; ?></p></div>
+                                <span><?php echo get_teaser_text($description,100); ?></span>
                             </div>
                         </div>
-                        <!-- End Col -->
-                        <div class="col-md-5 align-right">
-                            <div class="contact-map-blog">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.8414987306414!2d-115.99062268487462!3d36.21904730789598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c6377481109427%3A0x864b96292e25fb36!2s1541+E+Basin+Ave%2C+Pahrump%2C+NV+89060%2C+USA!5e0!3m2!1sen!2sin!4v1447333344460" width="100%" height="186" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                <h3>Pahrump Location</h3>
-                                <p><a target="_blank" href="http://maps.google.com/?q=<?php echo str_replace(" - Dispensing Soon", "", ot_get_option("pahrump_address")); ?> Pahrump"><?php echo ot_get_option("pahrump_address"); ?></a> <br> <?php echo ot_get_option("pahrump_number"); ?><br>
-                                    <br>
-                                    <?php // echo ot_get_option("pahrump_timing"); ?></p>
-                                <span><?php echo ot_get_option("pahrump_description"); ?></span>
-                            </div>
-                        </div>
+					<?php
+						$count++;
+							endwhile;
+						}
+					?>					
+                      
                         <div class="clearfix"></div>
                         <!-- End Col -->
                     </div>
@@ -78,7 +109,6 @@ global $post;
             </div>
         </div>
     </article>
-
 
     <script>
         jQuery(document).ready(function ($) {
