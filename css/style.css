@@ -472,7 +472,7 @@ label.gfield_label, .ginput_container_name label {
 #navbar-footer ul li a {
 	line-height:30px;
 	display:block;
-	padding:0px 15px;
+	padding:0px 10px;
 	font-size:14px;
 }
 
@@ -711,7 +711,7 @@ img {
 	#navbar-footer ul li a {
         line-height:30px;
         display:block;
-        padding:0px 15px;
+        padding:0px 10px;
         font-size:14px;
     }
 }
