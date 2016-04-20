@@ -341,7 +341,7 @@ a.faq-link-inner.active {
     padding: 0px !important;
 	line-height:14px !important;
 }
-label.gfield_label {
+label.gfield_label, .ginput_container_name label {
 	display:none !important;
 }
 #gform_wrapper_3 label.gfield_label {
@@ -349,16 +349,19 @@ label.gfield_label {
 }
 
 
-.ginput_container .medium, .form-text input {
+.ginput_container .medium, .form-text input, .ginput_container input  {
 	width:100% !important;
 	height:34px;
 	font-size:10px !important;
-	padding:0px 10px !important;
+	padding:0 10px !important;
 	line-height:33px;
 	border:1px solid #b4b6b4;
 	color:#6d6e71;
 	background:#ffffff;
-	margin:0px 0px 10px 0px;
+	margin:0 0 10px;
+}
+.ginput_container input {
+  margin: 0;
 }
 .form-list .form-txt-area {
 	width:100%;
