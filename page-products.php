@@ -66,7 +66,7 @@ global $post;
 					</div>
 					<div class="vapes-services color">
 						<div class="heading"><?php echo $product_category->name; ?></div>
-						<p><?php echo $product_category->description; ?></p>
+						<p><?php echo get_teaser_text($product_category->description,225); ?></p>
 						<a class="btn btn-default comman_button" href="<?php echo get_term_link( $product_category ) ?>">See Product</a>
 					</div>
 			</div>
