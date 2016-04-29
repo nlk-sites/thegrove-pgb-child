@@ -1140,15 +1140,17 @@ div.form-list {
 	font-family: avenir-light;
 }
 
-.vapes-services-img{min-height:200px !important;}
+.vapes-services-img{max-height:200px !important;}
 .vapes-services{
 	 background:#EEEEEE; 
 	 margin-bottom: 10px; 
 	 padding:25px 30px 25px 30px; 
-	 min-height:250px;
+	 height:285px;
 	 text-align: center;
-	 position: relative;
- }
+	overflow: auto;
+}
+ 
+ 
 
 
  
@@ -1195,7 +1197,7 @@ div.form-list {
 
 .loyalty{ 
  background-color: #C6D601; 
-  min-height:433px; 
+  min-height:495px; 
  padding: 48px;
  }
 .loyalty .heading{
