@@ -82,7 +82,7 @@ get_header(); ?>
 					 </div>
 					 <div class="vapes-services color">
 						  <div class="heading"><?php echo get_the_title();  ?></div>
-						  <p><?php the_excerpt(); ?></p>
+						   <p><?php echo get_teaser_text(get_the_excerpt(),225); ?></p>
 						  <a class="btn btn-default comman_button" href="<?php echo get_permalink(); ?>">See Product</a>
 					 </div>
 				</div>

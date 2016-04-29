@@ -1142,11 +1142,16 @@ div.form-list {
 
 .vapes-services-img{min-height:200px !important;}
 .vapes-services{
- background:#EEEEEE; 
- margin-bottom: 10px; 
- padding:25px 30px 25px 30px; 
- min-height:223px;
- text-align: center;}
+	 background:#EEEEEE; 
+	 margin-bottom: 10px; 
+	 padding:25px 30px 25px 30px; 
+	 min-height:250px;
+	 text-align: center;
+	 position: relative;
+ }
+
+
+ 
 .vapes-img{
  margin: 0 auto;}
 .vapes-img img{
