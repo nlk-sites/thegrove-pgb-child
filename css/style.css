@@ -1652,4 +1652,8 @@ div.form-list {
 	margin-bottom: -10px !important;
 }
 
+.gform_wrapper .ginput_container + .gfield_description.validation_message, .gform_wrapper .ginput_container .instruction.validation_message {
+    display: block !important;
+}
+
 /*end contact form and the-grove-society css for issue GWC-88*/
