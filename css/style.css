@@ -332,7 +332,7 @@ a.faq-link-inner.active {
     border-bottom:0px solid #c89797 !important;
     border-top:0px solid #c89797 !important;
     margin-bottom: 6px !important;
-    padding:0px 6px 4px !important;
+    padding:0px !important;
 }
 .gform_wrapper .ginput_container + .gfield_description.validation_message {
     margin-top: 0px !important;
@@ -352,8 +352,8 @@ label.gfield_label, .ginput_container_name label {
 .ginput_container .medium, .form-text input, .ginput_container input  {
 	width:100% !important;
 	height:34px;
-	font-size:10px !important;
-	padding:0 10px !important;
+	font-size:12px !important;
+	padding:10px 10px !important;
 	line-height:33px;
 	border:1px solid #b4b6b4;
 	color:#6d6e71;
@@ -1605,3 +1605,51 @@ div.form-list {
 	margin-top: 10px;
 	margin-bottom:18px;
 }
+
+/*start contact form and the-grove-society css for issue GWC-88*/
+.gform_wrapper textarea {
+	line-height: 18px !important;
+}
+
+.gform_wrapper input[type="email"], .gform_wrapper input[type="number"], .gform_wrapper input[type="password"], .gform_wrapper input[type="tel"], .gform_wrapper input[type="text"], .gform_wrapper input[type="url"] {
+	font-size: 12px !important;
+}
+
+.gform_wrapper.gf_browser_gecko ul.gform_fields li.gfield div.ginput_complex span.ginput_left select, .gform_wrapper.gf_browser_gecko ul.gform_fields li.gfield div.ginput_complex span.ginput_right select, .gform_wrapper.gf_browser_gecko ul.gform_fields li.gfield select {
+	font-size: 12px !important;
+	padding: 7px !important;
+}
+
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description, .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container, .gform_wrapper li.gfield.gfield_error.gfield_contains_required fieldset legend.gfield_label, .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+    margin-left: 0px !important;
+}
+
+.ginput_container_date {
+	padding: 0px!important;
+}
+
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container, .gform_wrapper li.gfield_html {
+    max-width: 100% !important;
+}
+
+.gform_wrapper .top_label .gfield_error {
+    width: 100% !important;
+}
+ .warningTextareaInfo {
+	float: left !important;
+	font-weight: 700;
+	margin-top: -11px !important;
+	margin-bottom: -9px !important;
+}
+.charleft.ginput_counter{
+	color: #A1A1A1 !important;
+	font-weight: 700;
+	margin-top: -10px !important;
+	margin-bottom: 10px;
+	
+}
+.form-margin .ginput_counter{
+	margin-bottom: -10px !important;
+}
+
+/*end contact form and the-grove-society css for issue GWC-88*/

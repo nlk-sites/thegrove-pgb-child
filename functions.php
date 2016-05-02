@@ -147,3 +147,48 @@ function get_teaser_text($string,$number_of_characters) {
 		return $string;
 	}
 }
+
+
+// code for validation user age 18+
+add_filter('gform_validation_3', 'verify_minimum_age');
+function verify_minimum_age($validation_result){
+ 
+    // retrieve the $form
+    $form = $validation_result['form'];
+ 
+        // date of birth is submitted in field 7 in the format YYYY-MM-DD
+        // change the 7 here to your field ID
+        $dob = rgpost('input_6');
+ 
+        // this the minimum age requirement we are validating
+        $minimum_age = 18;
+ 
+        // calculate age in years like a human, not a computer, based on the same birth date every year
+        $age = date('Y') - substr($dob, 6, 4);
+        if (strtotime(date('Y-m-d')) - strtotime(date('Y') . '-' . substr($dob, 0, 2) . '-' . substr($dob, 3, 2)) < 0) {
+            $age--;
+        }
+ 
+    // is $age less than the $minimum_age?
+    if( $age < $minimum_age ){
+ 
+        // set the form validation to false if age is less than the minimum age
+        $validation_result['is_valid'] = false;
+ 
+        // find field with ID of 7 and mark it as failed validation
+        foreach($form['fields'] as &$field){
+ 
+            // NOTE: replace 7 with the field you would like to mark invalid
+            if($field['id'] == '6'){
+                $field['failed_validation'] = true;
+                $field['validation_message'] = "Sorry, you must be at least $minimum_age years old.";
+                break;
+            }
+ 
+        }
+ 
+    }
+    // assign modified $form object back to the validation result
+    $validation_result['form'] = $form;
+    return $validation_result;
+}
