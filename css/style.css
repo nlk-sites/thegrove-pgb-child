@@ -347,7 +347,9 @@ label.gfield_label, .ginput_container_name label {
 #gform_wrapper_3 label.gfield_label {
   display: block !important;
 }
-
+.gform_wrapper .top_label li.gfield.gf_left_half {
+	float: left;
+}
 
 .ginput_container .medium, .form-text input, .ginput_container input  {
 	width:100% !important;
