@@ -73,7 +73,7 @@ if ( post_password_required() )
 		
 		$aria_req = 'required="required"';
 	$args = array(
-	'		fields' => array(
+	     'fields' => array(
 			'author' =>'<div class="ginput_container comment-form-author">' . '<input class="medium" id="author" placeholder="Name *" name="author" type="text" value="' .
 				esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />'.
 				'</div>'
