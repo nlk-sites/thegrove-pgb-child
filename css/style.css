@@ -1738,3 +1738,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 	padding: 0px;
 	margin-right: 10px;
 }
+
+.avatar_none  .avatar {
+	display:none;
+}
