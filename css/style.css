@@ -1453,10 +1453,9 @@ margin-right: 0px !important;
 
 
 /*for popup crome start*/
-
+/*
 .popmake-overlay {
     position: fixed;
-    display: none !important;
     width: 100%;
     height: 100%;
     top: 0;
@@ -1464,7 +1463,9 @@ margin-right: 0px !important;
     z-index: 1999999998 !important;
     overflow-x: hidden;
     overflow-y: auto;
+
 }
+*/
 .grove-header .logo img {
     position: relative;
     z-index: 0 !important;
