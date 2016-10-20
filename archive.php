@@ -51,7 +51,7 @@ get_header(); ?>
 			<ol class="breadcrumb">
 				<li><a href="#">Home</a></li>
 				<li class="active">
-					<?php if (function_exists(woocommerce_page_title)) {
+					<?php if (function_exists('woocommerce_page_title')) {
 						 woocommerce_page_title();
 					}
 					?>
