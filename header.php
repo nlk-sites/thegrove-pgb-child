@@ -62,8 +62,9 @@
                     function sameHeight() {
                         if ($(document).width() > 800) {
                             if ($("#homepage-flag").length == 0) {
-                                var right = $("#rightDiv").height(); //document.getElementById('rightDiv').style.height;
-                                var left = $("#leftDiv").height(); //document.getElementById('leftDiv').style.height;
+                                var right = $("#rightDiv").css( "height" ); //document.getElementById('rightDiv').style.height;
+                                var left = $("#leftDiv").css( "height" ); //document.getElementById('leftDiv').style.height;
+                                console.log('left = '+ left +' ? right = '+ right);
                                 if (left > right)
                                 {
                                     $("#rightDiv").css('min-height', ((left + 100) + "px"));
@@ -73,8 +74,9 @@
                                     $("#leftDiv").css('min-height', ((right) + "px"));
                                 }
                             } else {
-                                var right = $("#rightDiv").height(); //document.getElementById('rightDiv').style.height;
-                                var left = $("#leftDiv").height(); //document.getElementById('leftDiv').style.height;
+                                var right = $("#rightDiv").css( "height" ); //document.getElementById('rightDiv').style.height;
+                                var left = $("#leftDiv").css( "height" ); //document.getElementById('leftDiv').style.height;
+                                console.log('left = '+ left +' ? right = '+ right);
                                 if (left > right)
                                 {
                                     $("#rightDiv").css('min-height', ((left) + "px"));
