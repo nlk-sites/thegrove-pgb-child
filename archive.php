@@ -66,7 +66,11 @@ get_header(); ?>
 
 			<?php //woocommerce_product_loop_start(); ?>
 
-				<?php woocommerce_product_subcategories(); ?>
+				<?php
+				if (function_exists('woocommerce_product_subcategories')) {
+					woocommerce_product_subcategories();
+				}
+				?>
 <div class="row">
 				<?php while ( have_posts() ) : the_post(); ?>
 
