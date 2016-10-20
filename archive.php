@@ -50,7 +50,12 @@ get_header(); ?>
 		<div class="bd-example" data-example-id="">
 			<ol class="breadcrumb">
 				<li><a href="#">Home</a></li>
-				<li class="active"><?php woocommerce_page_title(); ?></li>
+				<li class="active">
+					<?php if (function_exists(woocommerce_page_title)) {
+						 woocommerce_page_title();
+					}
+					?>
+				</li>
 			</ol>
 		</div>
 
@@ -64,7 +69,7 @@ get_header(); ?>
 				<?php woocommerce_product_subcategories(); ?>
 <div class="row">
 				<?php while ( have_posts() ) : the_post(); ?>
-				
+
 				<div class="col-xs-12 col-md-6 col-lg-4">
 					 <div class="vapes-services nopadding vapes-services-img">
 						 <div class="vapes-img">
@@ -77,10 +82,10 @@ get_header(); ?>
 						  <a class="btn btn-default comman_button" href="<?php echo get_permalink(); ?>">See Product</a>
 					 </div>
 				</div>
-				
+
 				<?php endwhile; // end of the loop. ?>
 </div>
-		
+
 		<?php endif; ?>
 
 
