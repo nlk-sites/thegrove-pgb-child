@@ -48,10 +48,8 @@ get_header();
                             <!-- </article> -->
 
                             <?php // tha_entry_after(); ?>
-                            <h1 style="font-size: 60px; text-align: center;">404</h1>
-                            <p>
-                              The page you're looking for does not exist.
-                            </p>
+                            <h1 style="font-size: 68px; text-align: center;">404</h1>
+                            <p style="text-align: center; font-size: 18px;">The page you're looking for does not exist.</p>
 
                             <?php
                             /*
