@@ -30,7 +30,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-9 left">
-                    <div class="main-content-area-inner theme-bg" id="leftDiv">
+                    <div class="main-content-area-inner" id="leftDiv">
                         <?php // while (have_posts()) : the_post(); ?>
 
                             <?php // tha_entry_before(); ?>
@@ -48,8 +48,10 @@ get_header();
                             <!-- </article> -->
 
                             <?php // tha_entry_after(); ?>
-                            <h1>404</h1>
-
+                            <h1 style="font-size: 60px; text-align: center;">404</h1>
+                            <p>
+                              The page you're looking for does not exist.
+                            </p>
 
                             <?php
                             /*
