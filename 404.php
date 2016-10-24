@@ -21,9 +21,9 @@ get_header();
             </div>
         </div>
       */ ?>
-      <div class="container">
+      <!-- <div class="container">
         <h1>404</h1>
-      </div>
+      </div> -->
     </div>
     <div class="theme-vertical-border"></div>
     <article class="main-content-area">
@@ -31,23 +31,24 @@ get_header();
             <div class="row">
                 <div class="col-md-9 left">
                     <div class="main-content-area-inner theme-bg" id="leftDiv">
-                        <?php while (have_posts()) : the_post(); ?>
+                        <?php // while (have_posts()) : the_post(); ?>
 
-                            <?php tha_entry_before(); ?>
+                            <?php // tha_entry_before(); ?>
 
-                            <article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
+                            <?php /* <article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>> */?>
 
-                                <?php tha_entry_top(); ?>
+                                <?php // tha_entry_top(); ?>
 
-                                <?php get_template_part('content', get_post_format()); ?>
+                                <?php // get_template_part('content', get_post_format()); ?>
 
                                 <?php //get_template_part('posts', 'footer'); ?>
 
-                                <?php tha_entry_bottom(); ?>
+                                <?php // tha_entry_bottom(); ?>
 
-                            </article><!-- #post-## -->
+                            <!-- </article> -->
 
-                            <?php tha_entry_after(); ?>
+                            <?php // tha_entry_after(); ?>
+                            <h1>404</h1>
 
 
                             <?php
