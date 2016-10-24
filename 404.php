@@ -9,6 +9,7 @@ get_header();
 <section>
     <?php // <!--The Loop  ?>
     <div class="top-banner">
+      <?php /*
         <div class="container hidden-xs hidden-sm">
             <div class="row">
                 <div class="col-md-12"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/blog-single.jpg" /> </div>
@@ -19,6 +20,10 @@ get_header();
                 <div class="col-md-12"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mobile-blog-single.jpg" /> </div>
             </div>
         </div>
+      */ ?>
+      <div class="container">
+        <h1>404</h1>
+      </div>
     </div>
     <div class="theme-vertical-border"></div>
     <article class="main-content-area">
@@ -63,9 +68,9 @@ get_header();
 					</div>
 					</div>
                 </div>
-                <!-- Aside Ends --> 
+                <!-- Aside Ends -->
             </div>
-        </div>	
+        </div>
     </article>
 
 
